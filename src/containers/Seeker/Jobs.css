@@ -1,0 +1,43 @@
+.no-users-text {
+    font-family: cursive;
+    text-align: center;
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+}
+.user-list-item {
+    max-width: 80%;
+    margin: 1rem auto;
+}
+
+.user-list-item a {
+    text-decoration: none;
+}
+
+.user-list-item a:hover > .card, .user-list-item a:active > .card {
+    background: #FFFF8D;
+}
+
+.user-list-item-content {
+    display: flex;
+}
+.user-list-item-details {
+    padding: 0 0 0 2.5rem;
+    font-family: cursive;
+    letter-spacing: 2px;
+}
+.user-list-item-details .user-name{
+    color: #FFAB00;
+    font-size: 18px;
+}
+.user-list-item-details .user-place-count{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 400px) {
+    .user-list-item-details {
+        padding-left: 1.5rem;
+    }
+}

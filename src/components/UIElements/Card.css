@@ -1,0 +1,9 @@
+.card {
+    padding: 1rem;
+    background-color: #EFEBE9;
+    color: #424242;
+    border-radius: 12px;
+}
+.pointer {
+    cursor: pointer;
+}
