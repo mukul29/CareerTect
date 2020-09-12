@@ -96,6 +96,7 @@ const ApplicantsList = (props) => {
                         id={applicant.applicant_id}
                         name={applicant.fullname}
                         email={applicant.email}
+                        accepted={applicant.accepted}
                         hideButton={props.hideButton}
                         onClickCard={props.onClickCard}
                         jobId={props.jobId}
