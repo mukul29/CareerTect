@@ -8,11 +8,12 @@ import { AuthContext } from './context/auth-context';
 import { useAuth } from './hooks/auth-hook';
 import LoadingSpinner from './components/UIElements/LoadingSpinner';
 import { SEEKER, RECRUITER } from './values/userTypes';
-import AppliedJobs from './containers/Seeker/AppliedJobs';
-import Jobs from './containers/Seeker/Jobs';
-import PostedJobs from './containers/Recruiter/PostedJobs';
-import PostJob from './containers/Recruiter/PostJob';
-import JobApplicants from './containers/Recruiter/JobApplicants';
+
+const AppliedJobs = React.lazy(() => import('./containers/Seeker/AppliedJobs'));
+const Jobs = React.lazy(() => import('./containers/Seeker/Jobs'));
+const PostedJobs = React.lazy(() => import('./containers/Recruiter/PostedJobs'));
+const PostJob = React.lazy(() => import('./containers/Recruiter/PostJob'));
+const JobApplicants = React.lazy(() => import('./containers/Recruiter/JobApplicants'));
 
 // const Users = React.lazy(() => import('./users/pages/Users'));
 
