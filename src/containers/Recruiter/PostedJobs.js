@@ -7,6 +7,8 @@ import { useHttpClient } from '../../hooks/http-hook';
 import { AuthContext } from "../../context/auth-context";
 import JobsList from "../../components/JobsList";
 
+import '../Seeker/Jobs.css';
+
 const PostedJobs = (props) => {
     const [loadedJobs, setLoadedJobs] = useState(null);
     const { isLoading, error, clearError, sendRequest } = useHttpClient();

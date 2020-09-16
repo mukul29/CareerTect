@@ -15,8 +15,6 @@ const PostedJobs = React.lazy(() => import('./containers/Recruiter/PostedJobs'))
 const PostJob = React.lazy(() => import('./containers/Recruiter/PostJob'));
 const JobApplicants = React.lazy(() => import('./containers/Recruiter/JobApplicants'));
 
-// const Users = React.lazy(() => import('./users/pages/Users'));
-
 function App() {
     const { token, type, login, logout } = useAuth();
 
